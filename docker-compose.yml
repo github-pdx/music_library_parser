@@ -17,7 +17,8 @@ services:
       - frontend
       - backend
   mongodb:
-    image: mongo:4.2-bionic
+    image: mongo:4.4
+    # https://hub.docker.com/_/mongo
     # <host port>:<container port>
     ports: 
       - "27017:27017"

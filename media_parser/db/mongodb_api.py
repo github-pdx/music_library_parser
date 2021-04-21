@@ -9,7 +9,7 @@ import gridfs
 
 """
 Sources:   default: 27017  test: 27018
-pymongo version: 3.9.0
+pymongo version: 4.2.0
 https://api.mongodb.com/python/current/tutorial.html
 https://docs.mongodb.com/manual/reference/method/js-collection/
 https://docs.mongodb.com/manual/core/gridfs/
@@ -244,8 +244,7 @@ class MongoMedia:
                     with open(f"{str(file_path)}", 'rb') as file_ptr:
                         bin_media = file_ptr.read()
                         if bin_media:
-                            bin_id = cls.grid_fs.put(bin_media,
-                                                     filename=file_path.name)
+                            bin_id = cls.grid_fs.put(bin_media, filename=file_path.name)
                         file_ptr.close()
                         return bin_id
                 else:

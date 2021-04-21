@@ -1,15 +1,24 @@
 # Custom
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+venv/
+setup.py
 tests/test_coverage
 tests/test_code_style
 ~unittest_output/
 check_style_coverage.py
-venv
-private_cfg
+*check_*
+pep8_errors/
 docker_cmds.txt
-setup.py
 visualize_media.py
-desktop.ini
 ffmpeg-4.2.3
+docs/
+*.lock
+*.log
+
+
 
 #IDE metadata
 .idea/

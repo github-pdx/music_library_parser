@@ -1,5 +1,5 @@
-FROM python:3.7-slim
-MAINTAINER github.pdx
+FROM python:3.9-slim
+MAINTAINER averille-dev
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
